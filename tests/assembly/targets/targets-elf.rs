@@ -405,6 +405,9 @@
 //@ revisions: riscv32imac_esp_espidf
 //@ [riscv32imac_esp_espidf] compile-flags: --target riscv32imac-esp-espidf
 //@ [riscv32imac_esp_espidf] needs-llvm-components: riscv
+//@ revisions: riscv32imac_unknown_linux_gnu
+//@ [riscv32imac_unknown_linux_gnu] compile-flags: --target riscv32imac-unknown-linux-gnu
+//@ [riscv32imac_unknown_linux_gnu] needs-llvm-components: riscv
 //@ revisions: riscv32imac_unknown_none_elf
 //@ [riscv32imac_unknown_none_elf] compile-flags: --target riscv32imac-unknown-none-elf
 //@ [riscv32imac_unknown_none_elf] needs-llvm-components: riscv

@@ -1845,6 +1845,7 @@ supported_targets! {
     ("riscv32em-unknown-none-elf", riscv32em_unknown_none_elf),
     ("riscv32emc-unknown-none-elf", riscv32emc_unknown_none_elf),
 
+    ("riscv32imac-unknown-linux-gnu", riscv32imac_unknown_linux_gnu),
     ("riscv32imac-unknown-none-elf", riscv32imac_unknown_none_elf),
     ("riscv32imafc-unknown-none-elf", riscv32imafc_unknown_none_elf),
     ("riscv32imac-unknown-xous-elf", riscv32imac_unknown_xous_elf),
