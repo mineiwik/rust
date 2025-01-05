@@ -1,12 +1,14 @@
-use crate::spec::{Cc, LinkerFlavor, Lld, PanicStrategy, RelocModel, Target, TargetOptions};
+use std::borrow::Cow;
+
+use crate::spec::{CodeModel, SplitDebuginfo, Target, TargetOptions, base};
 
 pub(crate) fn target() -> Target {
     Target {
         data_layout: "e-m:e-p:32:32-i64:64-n32-S128".into(),
-        llvm_target: "riscv64-unknown-linux-gnu".into(), // support 32-bit RISC-V
+        llvm_target: "riscv32-unknown-linux-gnu".into(),
         metadata: crate::spec::TargetMetadata {
             description: Some("RISC-V Linux GNU (RV32IMAC ISA)".into()),
-            tier: Some(2),
+            tier: Some(3),
             host_tools: Some(false),
             std: Some(false),
         },
